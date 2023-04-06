@@ -1,0 +1,61 @@
+.wrap {
+  padding: 5rem;
+}
+
+.wrap h1 {
+  font-size: 14px;
+}
+
+.c-cat {
+  display: flex;
+  margin-left: -1rem;
+  padding-top: 6.5rem;
+}
+
+.c-article {
+  padding: 1rem;
+  width: 25%;
+  flex: 0 1 25%;
+  a {
+    svg {
+      margin-top: -1px;
+      display: inline-block;
+      vertical-align: middle;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 300;
+    padding-bottom: 1rem;
+  }
+
+  time {
+    color: var(--yellow);
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+    border-top: 1px dashed var(--yellow);
+    padding-top: 1rem;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  &:hover {
+    time {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+  }
+}
