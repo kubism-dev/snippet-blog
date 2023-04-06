@@ -36,7 +36,7 @@ const getPageMetaData = (post) => {
 
     return allTags;
   };
-
+  console.log(getTags(post.properties.Tags.multi_select));
   return {
     id: post.id,
     title: post.properties.Name.title[0].plain_text,

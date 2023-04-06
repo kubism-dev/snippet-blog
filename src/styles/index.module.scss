@@ -8,14 +8,14 @@
 
 .c-cat {
   display: flex;
-  margin-left: -1rem;
-  padding-top: 6.5rem;
+  margin-left: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 .c-article {
-  padding: 1rem;
-  width: 25%;
-  flex: 0 1 25%;
+  padding: 1rem 2rem 1rem 2rem;
+  width: min(25%, 300px);
+  flex: 0 1 min(25%, 300px);
   a {
     svg {
       margin-top: -1px;
@@ -58,4 +58,15 @@
     font-weight: 500;
     padding-bottom: 1rem;
   }
+}
+
+.o-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--red);
+  border-radius: 50%;
+  text-indent: -9999px;
+  margin-top: 1.15rem;
+  margin-left: -2.25rem;
+  margin-right: 4rem;
 }
